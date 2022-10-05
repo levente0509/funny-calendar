@@ -79,16 +79,23 @@ const year = [
   <time datetime="DD">DD</time>
 </div>; */
 
-const monthCard = function(nth,name,days){
-let daysHTML = "";
+const monthCard = function (nth, name, days) {
+  let daysHTML = "";
 
-for (let i=1, i<=days,i++){
-  daysHTML += dayElement(i);
-}
-return `
+  for (let i = 1; i <= days; i++) {
+    daysHTML += dayElement(i);
+  }
+  return `
 <section id="${nth}" class="${name}">
 <h2>${name}</h2>
 <div class="days">${daysHTML}</div>
-<div class=
-`
-}
+<div class="selected-day"></div>
+</section>
+`;
+};
+
+const dayElement = function (dayQuantity) {
+  return `
+  <div class="day">${dayQuantity}</div>
+  `;
+};
