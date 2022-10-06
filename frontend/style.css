@@ -13,7 +13,6 @@ body {
 #root section {
   padding: 0px 20px 20px 20px;
   border-radius: 20px;
-  box-sizing: border-box;
   border: 2px solid whitesmoke;
 }
 #root section .card {
@@ -41,6 +40,14 @@ body {
   display: inline-block;
 }
 #root .February {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+#root .February .card:nth-child(2n) {
+  margin-left: 20px;
+}
+#root .March {
   display: flex;
   flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

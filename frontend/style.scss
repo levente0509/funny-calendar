@@ -13,7 +13,7 @@ body{
     section {
         padding: 0px 20px 20px 20px;
         border-radius: 20px;
-        box-sizing: border-box;
+        // box-sizing: border-box;
         border: 2px solid whitesmoke;
         
         .card {
@@ -53,6 +53,14 @@ body{
     }
 
     .February {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        .card:nth-child(2n){
+        margin-left: 20px;
+        }
+    }
+    .March {
         display: flex;
         flex-direction: column;
     }
