@@ -9,7 +9,6 @@ body{
     gap: 20px;
     justify-content: center;
     align-items: space-evenly;
-
     
     section {
         padding: 0px 20px 20px 20px;
@@ -19,7 +18,6 @@ body{
         
         .card {
             color: whitesmoke;
-            // padding-bottom: 2px;
         }
 
         h2 {
@@ -41,5 +39,21 @@ body{
         background-color: rgb(40, 184, 208);
     }
 
+    .January {
+        display: block;
+        width: 150px;
 
-}
+        // h2 {
+        //    text-align: left;
+        // }
+
+        .card {
+            display: inline-block;
+        }
+    }
+
+    .February {
+        display: flex;
+        flex-direction: column;
+    }
+    }

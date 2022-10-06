@@ -32,4 +32,15 @@ body {
 }
 #root section:nth-child(3n+3) {
   background-color: rgb(40, 184, 208);
+}
+#root .January {
+  display: block;
+  width: 150px;
+}
+#root .January .card {
+  display: inline-block;
+}
+#root .February {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
