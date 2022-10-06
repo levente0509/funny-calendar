@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(40, 138, 103)
+}
+
+#root {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: space-evenly;
+
+    
+    section {
+        padding: 0px 20px 20px 20px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        border: 2px solid whitesmoke;
+        
+        .card {
+            color: whitesmoke;
+            // padding-bottom: 2px;
+        }
+
+        h2 {
+            color: rgb(214, 79, 69);
+            text-align: center;
+            text-decoration: underline;
+        }
+    }
+
+    section:nth-child(3n+2) {
+        background-color: rgb(224, 170, 54);
+    }
+
+    section:nth-child(3n+1) {
+        background-color: rgb(228, 140, 183);
+    }
+
+    section:nth-child(3n+3) {
+        background-color: rgb(40, 184, 208);
+    }
+
+
+}

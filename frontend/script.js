@@ -73,29 +73,42 @@ const year = [
   },
 ];
 
-/* <div class="card">
-  <time datetime="YYYY">YYYY</time>
-  <time datetime="MM">MM</time>
-  <time datetime="DD">DD</time>
-</div>; */
-
-const monthCard = function (nth, name, days) {
+const monthComponent = function (month, id, nth, days) {
   let daysHTML = "";
 
   for (let i = 1; i <= days; i++) {
-    daysHTML += dayElement(i);
+    daysHTML += dayComponent(i, month, nth);
   }
+
   return `
-<section id="${nth}" class="${name}">
-<h2>${name}</h2>
+<section id="${id}" class="${month}">
+<h2>${month}</h2>
 <div class="days">${daysHTML}</div>
 <div class="selected-day"></div>
 </section>
 `;
 };
 
-const dayElement = function (dayQuantity) {
+const dayComponent = function (dayCount, month, nth) {
   return `
-  <div class="day">${dayQuantity}</div>
+  <div class="card">
+  <time datetime="YYYY">2022</time>
+  <time datetime="MM">${month}</time>
+  <time datetime="DD">${dayCount}</time>
+</div>
   `;
 };
+
+const rootElement = document.querySelector("#root");
+
+for (let monthIndex = 0; monthIndex < 12; monthIndex++) {
+  rootElement.insertAdjacentHTML(
+    "beforeend",
+    monthComponent(
+      year[monthIndex].month,
+      year[monthIndex].id,
+      year[monthIndex].nth,
+      year[monthIndex].days
+    )
+  );
+}
