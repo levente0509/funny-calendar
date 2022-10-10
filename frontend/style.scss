@@ -15,9 +15,15 @@ body{
         border-radius: 20px;
         // box-sizing: border-box;
         border: 2px solid whitesmoke;
+        width:fit-content;
         
         .card {
             color: whitesmoke;
+        }
+        .card:hover{
+            background-color: rgb(255, 165, 0, 0.6);
+            transition: all 0.3s ease-in-out;
+            border-radius: 15px;
         }
 
         h2 {
@@ -41,7 +47,7 @@ body{
 
     .January {
         display: block;
-        width: 150px;
+        width: 120px;
 
         // h2 {
         //    text-align: left;

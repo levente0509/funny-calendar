@@ -14,9 +14,17 @@ body {
   padding: 0px 20px 20px 20px;
   border-radius: 20px;
   border: 2px solid whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #root section .card {
   color: whitesmoke;
+}
+#root section .card:hover {
+  background-color: rgba(255, 165, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
 }
 #root section h2 {
   color: rgb(214, 79, 69);
@@ -34,7 +42,7 @@ body {
 }
 #root .January {
   display: block;
-  width: 150px;
+  width: 120px;
 }
 #root .January .card {
   display: inline-block;
