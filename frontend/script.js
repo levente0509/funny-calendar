@@ -94,7 +94,7 @@ const dayComponent = function (dayCount, month, nth) {
   <div class="card">
   <time datetime="YYYY">2022</time>
   <time datetime="MM">${month}</time>
-  <time datetime="DD">${dayCount}</time>
+  <time class="day" datetime="DD">${dayCount}</time>
 </div>
   `;
 };
@@ -111,4 +111,13 @@ for (let monthIndex = 0; monthIndex < 12; monthIndex++) {
       year[monthIndex].days
     )
   );
+}
+
+const dayElements = document.querySelectorAll(".card");
+
+for (let i = 0; i < dayElements.length; i++) {
+  dayElements[i].addEventListener("click", function () {
+    dayElements[i].classList.toggle("clicked");
+    console.log("mukodj");
+  });
 }
