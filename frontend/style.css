@@ -45,13 +45,13 @@ body #root h2 {
   text-align: center;
   text-decoration: underline;
 }
-body section:nth-child(3n+2) {
+body section:nth-child(3n + 2) {
   background-color: rgb(224, 170, 54);
 }
-body section:nth-child(3n+1) {
+body section:nth-child(3n + 1) {
   background-color: rgb(228, 140, 183);
 }
-body section:nth-child(3n+3) {
+body section:nth-child(3n + 3) {
   background-color: rgb(40, 184, 208);
 }
 body .January {
@@ -60,6 +60,11 @@ body .January {
 body .January .card {
   display: inline-block;
 }
+@media only screen and (max-width: 800px) {
+  body #jan h2 {
+    color: aqua;
+  }
+}
 body .February {
   display: flex;
   flex-direction: column;
@@ -67,12 +72,70 @@ body .February {
 body .February .card:nth-child(2n) {
   justify-self: right;
 }
+@media only screen and (max-width: 810px) {
+  body #febr {
+    background-color: gray;
+  }
+}
 body .March {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 820px) {
   body .March .card {
     background-color: orange;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+@media only screen and (max-width: 830px) {
+  body #root .April .card:hover {
+    background-color: greenyellow;
+  }
+}
+@media only screen and (max-width: 840px) {
+  body #root .May .card {
+    border: 1px solid purple;
+    color: purple;
+  }
+}
+@media only screen and (max-width: 850px) {
+  body #june h2 {
+    background-color: black;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  body #root .July {
+    border: 5px solid rgb(64, 207, 39);
+  }
+}
+@media only screen and (max-width: 860px) {
+  body #root .August .card {
+    border: none;
+  }
+}
+@media only screen and (max-width: 870px) {
+  body #root .September .card {
+    border: none;
+  }
+}
+body #root .September .card.card:nth-child(2n) {
+  border-top: solid darkkhaki;
+}
+@media only screen and (max-width: 870px) {
+  body #root .October .day {
+    color: teal;
+    font-size: larger;
+  }
+}
+@media only screen and (max-width: 880px) {
+  body #nov {
+    background-color: blueviolet;
+  }
+}
+@media only screen and (max-width: 890px) {
+  body #dec h2 {
+    text-decoration: line-through;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

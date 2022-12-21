@@ -68,26 +68,44 @@ body{
         display: block;
         .card {
             display: inline-block;
+    }
+}
+    #jan{
+        h2{
+            @media only screen and (max-width: 800px) {
+                color: aqua;
+            }
         }
     }
 
     .February {
         display: flex;
         flex-direction: column;
-        // align-self: flex-start;
         .card:nth-child(2n){
             justify-self: right;
+            }
+
         }        
+    #febr{
+        @media only screen and (max-width: 810px) {
+            background-color: gray;
+        }
     }
     .March {
         display: flex;
         flex-direction: column;
         
-        @media only screen and (max-width:800px) {
+        @media only screen and (max-width:820px) {
             .card{
                 background-color: orange;
             }
         }
     }
-    
+    .April{
+        @media only screen and (max-width:830px) {
+        .card:hover{
+            background-color: greenyellow;
+        }
     }
+    }
+}
