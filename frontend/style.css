@@ -67,8 +67,32 @@ body .January .card {
 }
 body .February {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
+body .March {
+  display: flex;
+  flex-grow: 4;
+}
+body .April {
+  display: flex;
+  flex-shrink: 1;
+}
+body .May {
+  display: flex;
+}
+body .June {
+  display: flex;
+  flex-wrap: nowrap;
+}
+body .July {
+  display: grid;
+  grid-column: auto;
+}
+body .July {
+  display: grid;
+  grid: auto / auto auto auto;
+}
+
 body .February .card:nth-child(2n) {
   justify-self: right;
 }
